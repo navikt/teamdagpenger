@@ -1,10 +1,12 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 
 const FeatureList = [
   {
     title: "Innbyggerflate",
+    link: "/docs/innbyggerflate/",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
@@ -15,6 +17,7 @@ const FeatureList = [
   },
   {
     title: "Sak og behandling ",
+    link: "/docs/sak-og-behandling/",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
@@ -25,9 +28,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, link }) {
   return (
-    <div className={clsx("col col--4")}>
+    <Link href={link} className={clsx("col col--4 margin-horiz--md card")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -35,7 +38,7 @@ function Feature({ Svg, title, description }) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

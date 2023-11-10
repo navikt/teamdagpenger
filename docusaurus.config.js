@@ -66,11 +66,11 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "/hvordan-skrive",
+            label: "Hvordan skrive her",
             position: "left",
-            label: "Tutorial",
           },
+
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
