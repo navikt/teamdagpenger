@@ -38,6 +38,7 @@ const config = {
   markdown: {
     mermaid: true,
   },
+  staticDirectories: ["static"],
 
   presets: [
     [
