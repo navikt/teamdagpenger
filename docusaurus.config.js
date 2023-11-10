@@ -34,7 +34,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: [["drawio", {}]],
+  plugins: [require.resolve("docusaurus-lunr-search"), ["drawio", {}]],
   themes: ["@docusaurus/theme-mermaid"],
   markdown: {
     mermaid: true,
